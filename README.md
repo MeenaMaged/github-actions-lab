@@ -33,3 +33,5 @@ pytest -v scripts/
 Both tests pass locally; `from math_utils import add, subtract` resolves because pytest
 puts the test file's own directory (`scripts/`) on `sys.path` — there is no `__init__.py`
 in `scripts/`, and adding one would break that import.
+
+<!-- CI runs on dev pushes and on PRs targeting main -->
